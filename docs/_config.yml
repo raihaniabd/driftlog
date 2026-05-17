@@ -1,0 +1,15 @@
+title: Driftlog
+description: The aquarium log built for keepers, not for subscriptions. Offline. No account. One-time purchase.
+
+# REQUIRED for GitHub Pages project sites — paths break without this.
+# Site is served at https://raihaniabd.github.io/driftlog/
+baseurl: "/driftlog"
+
+exclude:
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

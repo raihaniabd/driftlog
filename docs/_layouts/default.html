@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0F1417" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#FAF7F2" media="(prefers-color-scheme: light)" />
+    <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- A scaled-down aquarium bowl SVG, echoing the app icon -->
+          <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#5BA8B8"/>
+                <stop offset="1" stop-color="#0F4C5C"/>
+              </linearGradient>
+            </defs>
+            <!-- Bowl outline -->
+            <path d="M16 22 L48 22 Q56 22 56 32 Q56 52 32 52 Q8 52 8 32 Q8 22 16 22 Z"
+                  fill="url(#waterGrad)" stroke="#F0E6D2" stroke-width="2"/>
+            <!-- Waterline -->
+            <path d="M14 28 Q24 30 32 28 T54 28" stroke="#FFFFFF" stroke-width="0.8" fill="none" opacity="0.55"/>
+            <!-- A tiny fish -->
+            <path d="M28 38 Q34 34 40 38 Q42 40 40 42 Q34 46 28 42 Z" fill="#F5C84A" stroke="#0F4C5C" stroke-width="0.6"/>
+            <path d="M28 40 L22 36 L22 44 Z" fill="#E0A030"/>
+            <circle cx="37" cy="39.5" r="0.8" fill="#0F1417"/>
+          </svg>
+        </span>
+        <span class="brand-name">Driftlog</span>
+      </a>
+      <nav class="site-nav">
+        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+        <a href="{{ '/terms/' | relative_url }}">Terms</a>
+        <a href="{{ '/support/' | relative_url }}">Support</a>
+      </nav>
+    </header>
+
+    <main class="site-main {% if page.layout-narrow %}narrow{% endif %}">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="foot-row">
+        <span>© 2026 Abdessamad Raihani</span>
+        <span class="dot" aria-hidden="true">•</span>
+        <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+        <span class="dot" aria-hidden="true">•</span>
+        <a href="{{ '/terms/' | relative_url }}">Terms</a>
+        <span class="dot" aria-hidden="true">•</span>
+        <a href="{{ '/support/' | relative_url }}">Support</a>
+      </div>
+    </footer>
+  </body>
+</html>
