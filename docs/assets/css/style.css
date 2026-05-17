@@ -85,20 +85,13 @@ a:hover { color: var(--text); }
 .brand-mark {
   width: 36px;
   height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 9px;
   box-shadow: var(--shadow);
-  overflow: hidden;
-}
-.brand-mark img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  background-color: #2C5759;
+  background-image: var(--brand-logo);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .brand-name {
   font-family: var(--serif);
@@ -187,27 +180,21 @@ a:hover { color: var(--text); }
 }
 .btn-secondary:hover { color: var(--text); border-color: var(--text-muted); }
 
-/* ------------ hero illustration: the bowl ------------ */
+/* ------------ hero illustration: the logo ------------ */
 .hero-illustration {
   margin: 0 auto 32px;
   width: clamp(180px, 32vw, 240px);
-  aspect-ratio: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-2) 100%);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  height: clamp(180px, 32vw, 240px);
+  border-radius: 36px;
   box-shadow: var(--shadow);
-  overflow: hidden;
+  background-color: #2C5759;
+  background-image: var(--brand-logo);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.hero-illustration svg { width: 78%; height: 78%; }
-.hero-illustration img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+/* Hide any child elements (previous SVG/img markup) — background-image is enough */
+.hero-illustration > * { display: none; }
 
 /* ------------ sections ------------ */
 .section { padding: 56px 0 16px; }

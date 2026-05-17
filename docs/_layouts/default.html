@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
     <link rel="icon" type="image/jpeg" href="{{ '/assets/logo.jpg' | relative_url }}" />
     <link rel="apple-touch-icon" href="{{ '/assets/logo.jpg' | relative_url }}" />
+    <style>
+      :root { --brand-logo: url("{{ '/assets/logo.jpg' | relative_url }}"); }
+    </style>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="{{ '/' | relative_url }}">
-        <span class="brand-mark" aria-hidden="true">
-          <img src="{{ '/assets/logo.jpg' | relative_url }}" alt="" />
-        </span>
+        <span class="brand-mark" role="img" aria-label="Driftlog"></span>
         <span class="brand-name">Driftlog</span>
       </a>
       <nav class="site-nav">
