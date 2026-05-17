@@ -94,6 +94,12 @@ a:hover { color: var(--text); }
   box-shadow: var(--shadow);
   overflow: hidden;
 }
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 .brand-name {
   font-family: var(--serif);
   font-weight: 600;
@@ -196,6 +202,12 @@ a:hover { color: var(--text); }
   overflow: hidden;
 }
 .hero-illustration svg { width: 78%; height: 78%; }
+.hero-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
 /* ------------ sections ------------ */
 .section { padding: 56px 0 16px; }

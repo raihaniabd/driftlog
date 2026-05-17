@@ -15,7 +15,7 @@ permalink: /support/
 
 Email is the fastest way to get help. I usually reply within **1–2 business days**.
 
-[**abdessamadraih2@gmail.com**](mailto:abdessamadraih2@gmail.com?subject=Driftlog%20support)
+[**abdessamad.raihani@outlook.com**](mailto:abdessamad.raihani@outlook.com?subject=Driftlog%20support)
 
 ## What to include in a report
 

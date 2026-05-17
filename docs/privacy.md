@@ -69,6 +69,6 @@ If we ever materially change this policy, we will update the effective date abov
 
 ## Contact
 
-For any privacy question, email **[abdessamadraih2@gmail.com](mailto:abdessamadraih2@gmail.com)**.
+For any privacy question, email **[abdessamad.raihani@outlook.com](mailto:abdessamad.raihani@outlook.com)**.
 
 </div>

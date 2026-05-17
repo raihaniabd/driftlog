@@ -61,6 +61,6 @@ These terms are governed by the laws of the developer's country of residence, wi
 
 ## Contact
 
-Questions about these terms: **[abdessamadraih2@gmail.com](mailto:abdessamadraih2@gmail.com)**.
+Questions about these terms: **[abdessamad.raihani@outlook.com](mailto:abdessamad.raihani@outlook.com)**.
 
 </div>
